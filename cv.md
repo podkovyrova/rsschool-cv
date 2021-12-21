@@ -4,7 +4,7 @@
 + Telegram: [wakemeuptomorrow](https://t.me/wakemeuptomorrow)
 + Discord: podkovyrova(#0788)
 + E-mail: podkovyrova.es@mail.ru
-+ GitHub: *[podkovyrova](https://github.com/podkovyrova)*
++ GitHub: [podkovyrova](https://github.com/podkovyrova)
 
 ## **About**
 Today I am 21 years old and after gaining work experience in the studied specialty at the university, I decided to change my profession.
