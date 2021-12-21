@@ -1,9 +1,9 @@
 # **Katerina Podkovyrova**
 
 ## **Contact Info**
-+ Telegram: *@wakemeuptomorrow*
-+ Discord: *podkovyrova*
-+ E-mail: *podkovyrova.es@mail.ru*
++ Telegram: [wakemeuptomorrow](https://t.me/wakemeuptomorrow)
++ Discord: podkovyrova(#0788)
++ E-mail: podkovyrova.es@mail.ru
 + GitHub: *[podkovyrova](https://github.com/podkovyrova)*
 
 ## **About**
