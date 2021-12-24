@@ -4,109 +4,199 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="prism.css">
     <link rel="stylesheet" href="style.css">
     <title>cv</title>
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <nav>
-                <ul class="menu">
-                    <li class="menu-item">
-                        <a href="#contacts" class="menu-item-link">Contacts</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#about" class="menu-item-link">About</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#skills" class="menu-item-link">Skills</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#code" class="menu-item-link">Code</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#courses" class="menu-item-link">Courses</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#projects" class="menu-item-link">Projects</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#education" class="menu-item-link">Education</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#languages" class="menu-item-link">Languages</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main class="main">
-        <div class="_container">
-            <div class="card-row">
-                <div class="card-column">
-                    <div class="card-column-info">
-                        <h1>Katerina Podkovyrova</h1>
-                        <h2>Frontend Developer</h2>
-                        <section id="contacts" class="contacts">
-                            <ul class="contacts-list">
-                                <li class="contacts-item">
-                                    <img src="./assets/img/github.svg" alt="github-img">
-                                    <a href="https://github.com/podkovyrova" class="contacts-item-link">github.com/podkovyrova</a>
-                                </li>
-                                <li class="contacts-item">
-                                    <img src="./assets/img/telegram.svg" alt="telegram-img">
-                                    <a href="https://t.me/wakemeuptomorrow" class="contacts-item-link">t.me/wakemeuptomorrow</a>
-                                </li>
-                                <li class="contacts-item">
-                                    <img src="./assets/img/discord.svg" alt="discord-img">
-                                    <a href="https://discord.gg/wtDGG9eNqU" class="contacts-item-link">podkovyrova(@podkovyrova)</a>
-                                </li>
-                                <li class="contacts-item">
-                                    <img src="./assets/img/mail.svg" alt="mail-img">
-                                    <a href="mailto:podkovyrova.es@mail.ru" class="contacts-item-link">podkovyrova.es@mail.ru</a>
-                                </li>
-                                <li class="contacts-item">
-                                    <img src="./assets/img/location.svg" alt="location-img">
-                                    Moscow, Russia</li>
-                            </ul>
-                        </section>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <nav>
+                    <ul class="menu">
+                        <li class="menu-item">
+                            <a href="#contacts" class="menu-item-link">Contacts</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#about" class="menu-item-link">About</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#skills" class="menu-item-link">Skills</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#code" class="menu-item-link">Code</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#courses" class="menu-item-link">Courses</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#projects" class="menu-item-link">Projects</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#education" class="menu-item-link">Education</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#languages" class="menu-item-link">Languages</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+            <div class="_container">
+                <div class="card-row">
+                    <div class="card-column">
+                        <div class="card-column-info">
+                            <h1>Katerina Podkovyrova</h1>
+                            <h2>Frontend Developer</h2>
+                            <section id="contacts" class="contacts">
+                                <ul class="contacts-list">
+                                    <li class="contacts-item">
+                                        <img src="./assets/img/github.svg" alt="github-img">
+                                        <a href="https://github.com/podkovyrova" class="contacts-item-link">github.com/podkovyrova</a>
+                                    </li>
+                                    <li class="contacts-item">
+                                        <img src="./assets/img/telegram.svg" alt="telegram-img">
+                                        <a href="https://t.me/wakemeuptomorrow" class="contacts-item-link">t.me/wakemeuptomorrow</a>
+                                    </li>
+                                    <li class="contacts-item">
+                                        <img src="./assets/img/discord.svg" alt="discord-img">
+                                        <a href="https://discord.gg/wtDGG9eNqU" class="contacts-item-link">podkovyrova(@podkovyrova)</a>
+                                    </li>
+                                    <li class="contacts-item">
+                                        <img src="./assets/img/mail.svg" alt="mail-img">
+                                        <a href="mailto:podkovyrova.es@mail.ru" class="contacts-item-link">podkovyrova.es@mail.ru</a>
+                                    </li>
+                                    <li class="contacts-item">
+                                        <img src="./assets/img/location.svg" alt="location-img">
+                                        Moscow, Russia</li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="card-column">
+                        <div class="card-column-photo">
+                            <img src="./assets/img/dfwlHbOw1eE.jpeg" alt="My рhoto">
+                        </div>
                     </div>
                 </div>
-                <div class="card-column">
-                    <div class="card-column-photo">
-                        <img src="./assets/img/dfwlHbOw1eE.jpeg" alt="My рhoto">
-                    </div>
+                <div class="content">
+                    <section id="#about" class="about">
+                        <span class="decoration-line"></span>
+                        <h2 class="_title">About</h2>
+                        <div class="about-text">
+                            Today I am 21 years old and after gaining work experience in the studied specialty at the university, I decided to change my profession. Since childhood, I have been interested in technologies and programs: when I accidentally opened DevTools in a browser, I got scared, but at the same time I became interested in how it all works. Now I understand how it works and I want to create my own web pages and applications. 4 months ago I learned about such a profession as Frontend-developer and began to actively learn HTML and CSS on my own. Also, I have created several landing pages. My goal for the next six months is to finish RS School and get my first job as a Junior Frontend Developer.
+                        </div>
+                    </section>
+                    <section id="skills" class="skills">
+                        <span class="decoration-line"></span>
+                        <h2 class="_title" >Skills</h2>
+                        <div class="skills-row">
+                            <div class="skills-image">
+                                <img src="./assets/img/skills/html.png" alt="skill">
+                            </div>
+                            <div class="skills-image">
+                                <img src="./assets/img/skills/css.png" alt="skill">
+                            </div>
+                            <div class="skills-image">
+                                <img src="./assets/img/skills/js.png" alt="skill">
+                            </div>
+                            <div class="skills-image">
+                                <img src="./assets/img/skills/git.png" alt="skill">
+                            </div>
+                            <div class="skills-image">
+                                <img src="./assets/img/skills/gulp.png" alt="skill">
+                            </div>
+                            <div class="skills-image">
+                                <img src="./assets/img/skills/sass.png" alt="skill">
+                            </div>
+                            <div class="skills-image">
+                                <img src="./assets/img/skills/figma.svg" alt="skill">
+                            </div>
+                        </div>
+                    </section>
+                    <section id="education" class="education">
+                        <span class="decoration-line"></span>
+                        <h2 class="_title" >Education</h2>
+                            <div class="education-row">
+                                <div class="education-container">
+                                    <h3 class="university-name">Financial University under the Goverment of the Russian Federation</h3>
+                                    <h4 class="university-faculty">Financial faculty</h4>
+                                    <div class="university-year">2018 - 2022</div>
+                                </div>
+                                <div class="education-logo">
+                                    <img src="./assets/img/1588323837.jpeg" alt="univrsity-logo">
+                                </div>
+                            </div>
+    
+                    </section>
+                    <section id="courses" class="courses">
+                        <span class="decoration-line"></span>
+                        <h2 class="_title" >Courses</h2>
+                    </section>
+                    <section id="languages" class="languages">
+                        <span class="decoration-line"></span>
+                        <h2 class="_title" >Languages</h2>
+                    </section>
+                </div>
+                <div class="_container">
+                    <section class="code" id="code">
+                        <h2 class="code-title">JavaScript Code Example for <a href="https://podkovyrova.github.io/interesting-slider/">[Interesting Slider]</a></h2>
+                        <pre>
+                            <code class="language-javascript">
+    const upBtn = document.querySelector('.up-button');
+    const downBtn = document.querySelector('.down-button');
+    const sidebar = document.querySelector('.sidebar');
+    const mainSlide = document.querySelector('.main-slide');
+    const container = document.querySelector('.container');
+        
+    const slidesCount = mainSlide.querySelectorAll('div').length;
+        
+    let activeSlideIndex = 0; 
+        
+    sidebar.style.top = `-${(slidesCount-1) * 100}vh`;
+        
+    upBtn.addEventListener('click', () => {
+        changeSlide('up');
+    })
+    downBtn.addEventListener('click', () => {
+        changeSlide('down');
+    })
+        
+    document.addEventListener('keydown', event => {
+        if (event.key === 'ArrowUp') {
+            changeSlide('up');
+        } else if (event.key === 'ArrowDown') {
+            changeSlide('down');
+        }
+    })
+    
+    function changeSlide(direction) {
+        if (direction === 'up') {
+            activeSlideIndex++;
+            if(activeSlideIndex === slidesCount) {
+                activeSlideIndex = 0;
+            }
+        } else if (direction === 'down') {
+            activeSlideIndex--;
+            if(activeSlideIndex < 0) {
+                activeSlideIndex = slidesCount - 1;
+            }
+        }
+    
+        const heightOfWindow = container.clientHeight;
+    
+        mainSlide.style.transform = `translateY(-${activeSlideIndex * heightOfWindow}px)`;
+        sidebar.style.transform = `translateY(${activeSlideIndex * heightOfWindow}px)`;
+    }
+                            </code>
+                        </pre>
+                    </section>
                 </div>
             </div>
-            <div class="content">
-                <section id="#about" class="about">
-                    <span class="decoration-line"></span>
-                    <h2 class="_title">About</h2>
-                    <div class="about-text">
-                        Today I am 21 years old and after gaining work experience in the studied specialty at the university, I decided to change my profession. Since childhood, I have been interested in technologies and programs: when I accidentally opened DevTools in a browser, I got scared, but at the same time I became interested in how it all works. Now I understand how it works and I want to create my own web pages and applications. 4 months ago I learned about such a profession as Frontend-developer and began to actively learn HTML and CSS on my own. Also, I have created several landing pages. My goal for the next six months is to finish RS School and get my first job as a Junior Frontend Developer.
-                    </div>
-                </section>
-                <section id="skills" class="skills">
-                    <span class="decoration-line"></span>
-                    <h2 class="_title" >Skills</h2>
-                </section>
-                <section id="education" class="education">
-                    <span class="decoration-line"></span>
-                    <h2 class="_title" >Education</h2>
-                </section>
-                <section id="courses" class="courses">
-                    <span class="decoration-line"></span>
-                    <h2 class="_title" >Courses</h2>
-                </section>
+        </main>
+    </div>
 
-
-
-
-
-
-            </div>
-        </div>
-    </main>
-
+    <script src="./prism.js"></script>
 </body>
 </html>
