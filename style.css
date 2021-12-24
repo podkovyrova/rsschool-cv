@@ -245,6 +245,34 @@ section {
     max-height: 100px;
 }
 /* skills */
+/* language */
+.languages {}
+.languages-row {
+    display: flex;
+}
+.language-column {
+    margin: 0px 50px 0px 0px;
+}
+.language-title {
+    margin: 0px 0px 10px 0px;
+    font-size: 2rem;
+    position: relative;
+    padding-top: 15px;
+}
+.language-title::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 85px;
+    height: 4px;
+    background-color: #a967e8;
+}
+.language-level {
+    font-size: 1.2rem;
+    color: #545454;
+}
+/* language */
 
 
 /* code */
@@ -277,3 +305,41 @@ section {
     color: inherit;
 }
 /* code */
+
+/* footer */
+.footer {
+    padding: 30px;
+    background-color: #626ef4;
+    font-size: 1.5rem;
+}
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.footer-author {
+    color: #fff;
+    flex-basis: 50%;
+}
+.footer-link {
+    display: block;
+    margin: 0px 20px 0px 0px;
+    color: #fff;
+    text-decoration: underline;
+}
+.footer-link a {
+    color: inherit;
+    transition: color .5s ease 0s;
+}
+.footer-link a:hover {
+    color: #ff1393;
+}
+.footer-course {
+    width: auto;
+    height: 40px;
+}
+.rs-logo {
+    max-width: 100%;
+    height: 100%;
+}
+/* footer */
