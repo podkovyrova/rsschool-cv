@@ -165,7 +165,6 @@ section {
     width: 100%;
     height: auto;
 }
-
 .contacts-list {
     display: flex;
     flex-direction: column;
@@ -202,7 +201,7 @@ section {
 }
 /* card info */
 
-
+/* ?????? */
 .content {
     background-color: #fff;
     margin: 20px;
@@ -214,7 +213,7 @@ section {
     font-size: 1.25rem;
     line-height: 125%;
 }
-
+/* ????? */
 /* education */
 .education-row {
     display: flex;
@@ -228,12 +227,13 @@ section {
     width: auto;
 }
 .education-container {
+    padding: 15px 0 0 0;
     margin-left: 10px;
 }
 .university-name {
     font-weight: 700;
     margin: 0px 0px 5px 0px;
-    font-size: 1.35rem;
+    font-size: 1.75rem;
 }
 .university-faculty {
     font-size: 1.2rem;
@@ -255,6 +255,43 @@ section {
     max-height: 100px;
 }
 /* skills */
+
+/* courses */
+.courses-list {
+    font-size: 1.55rem;
+    padding: 10px 0 10px 10px;
+    position: relative;
+}
+.courses-item {
+    line-height: 150%;
+}
+.courses-list li::before {
+	content: "";
+    display: inline-block;
+    background: #545454;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-bottom: 2px;
+}
+.course-link {
+    color: #a967e8;
+    text-decoration: underline;
+    transition: color .5s ease 0s;
+}
+.course-link:hover {
+    color: #545454;
+}
+.youtube {
+    text-decoration: none;
+    color: inherit;
+}
+.youtube:hover {
+    color: rgb(172, 0, 0);
+}
+/* courses */
+
 /* language */
 .languages {}
 .languages-row {
