@@ -121,7 +121,7 @@ section {
     transition: all .5s ease 0s;
 }
 .menu-item-link:hover {
-    color: #e85bd8
+    color: #e85bd8;
 }
 /* header */
 
@@ -201,7 +201,7 @@ section {
 }
 /* card info */
 
-/* ?????? */
+/* about */
 .content {
     background-color: #fff;
     margin: 20px;
@@ -213,7 +213,8 @@ section {
     font-size: 1.25rem;
     line-height: 125%;
 }
-/* ????? */
+/* about */
+
 /* education */
 .education-row {
     display: flex;
@@ -250,9 +251,35 @@ section {
     display: flex;
     justify-content: space-between;
 }
+.skills-image {
+    border-radius: 50%;
+    border: 5px solid #8d6bee;
+    background-color: #d4acf8;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.skills-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -35px;
+    margin-top: 10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #fff;
+}
 .skills-image img {
-    max-width: auto;
-    max-height: 100px;
+    position: relative;
+    display: block;
+    width: auto;
+    height: 50px;
+    z-index: 2;
 }
 /* skills */
 
