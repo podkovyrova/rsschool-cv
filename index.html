@@ -88,26 +88,47 @@
                         <span class="decoration-line"></span>
                         <h2 class="_title" >Skills</h2>
                         <div class="skills-row">
-                            <div class="skills-image">
-                                <img class="skill-img" src="./assets/img/skills/html.png" alt="skill">
+                            <div class="skills-column">
+                                <div class="skills-image">
+                                    <img class="skill-img" src="./assets/img/skills/html.png" alt="skill">
+                                </div>
+                                <h3 class="skills-title">HTML3</h3>
                             </div>
-                            <div class="skills-image">
-                                <img class="skill-img" src="./assets/img/skills/css.png" alt="skill">
+                            <div class="skills-column">
+                                <div class="skills-image">
+                                    <img class="skill-img" src="./assets/img/skills/css.png" alt="skill">
+                                </div>
+                                <h3 class="skills-title">CSS3</h3>
                             </div>
-                            <div class="skills-image">
-                                <img class="skill-img" src="./assets/img/skills/js.png" alt="skill">
+                            <div class="skills-column">
+                                <div class="skills-image">
+                                    <img class="skill-img" src="./assets/img/skills/js.png" alt="skill">
+                                </div>
+                                <h3 class="skills-title">JavaScript</h3>
                             </div>
-                            <div class="skills-image">
-                                <img class="skill-img" src="./assets/img/skills/git.png" alt="skill">
+                            <div class="skills-column">
+                                <div class="skills-image">
+                                    <img class="skill-img" src="./assets/img/skills/git.png" alt="skill">
+                                </div>
+                                <h3 class="skills-title">Git</h3>
                             </div>
-                            <div class="skills-image">
-                                <img class="skill-img" src="./assets/img/skills/gulp.png" alt="skill">
+                            <div class="skills-column">
+                                <div class="skills-image">
+                                    <img class="skill-img" src="./assets/img/skills/gulp.png" alt="skill">
+                                </div>
+                                <h3 class="skills-title">Gulp</h3>
                             </div>
-                            <div class="skills-image">
-                                <img class="skill-img" src="./assets/img/skills/sass.png" alt="skill">
+                            <div class="skills-column">
+                                <div class="skills-image">
+                                    <img class="skill-img" src="./assets/img/skills/sass.png" alt="skill">
+                                </div>
+                                <h3 class="skills-title">Sass</h3>
                             </div>
-                            <div class="skills-image">
-                                <img class="skill-img" src="./assets/img/skills/figma.svg" alt="skill">
+                            <div class="skills-column">
+                                <div class="skills-image">
+                                    <img class="skill-img" src="./assets/img/skills/figma.svg" alt="skill">
+                                </div>
+                                <h3 class="skills-title">Sass</h3>
                             </div>
                         </div>
                     </section>
@@ -152,60 +173,79 @@
                         </div>
                     </section>
                 </div>
-                <div class="_container">
-                    <section class="code" id="code">
-                        <h2 class="code-title">JavaScript Code Example for <a href="https://podkovyrova.github.io/interesting-slider/">[Interesting Slider]</a></h2>
-                        <pre>
-                            <code class="language-javascript">
-    const upBtn = document.querySelector('.up-button');
-    const downBtn = document.querySelector('.down-button');
-    const sidebar = document.querySelector('.sidebar');
-    const mainSlide = document.querySelector('.main-slide');
-    const container = document.querySelector('.container');
-        
-    const slidesCount = mainSlide.querySelectorAll('div').length;
-        
-    let activeSlideIndex = 0; 
-        
-    sidebar.style.top = `-${(slidesCount-1) * 100}vh`;
-        
-    upBtn.addEventListener('click', () => {
+                <section class="code" id="code">
+                    <h2 class="code-title">JavaScript Code Example for <a href="https://podkovyrova.github.io/interesting-slider/">[Interesting Slider]</a></h2>
+                    <pre>
+                        <code class="language-javascript">
+const upBtn = document.querySelector('.up-button');
+const downBtn = document.querySelector('.down-button');
+const sidebar = document.querySelector('.sidebar');
+const mainSlide = document.querySelector('.main-slide');
+const container = document.querySelector('.container');
+    
+const slidesCount = mainSlide.querySelectorAll('div').length;
+    
+let activeSlideIndex = 0; 
+    
+sidebar.style.top = `-${(slidesCount-1) * 100}vh`;
+    
+upBtn.addEventListener('click', () => {
+    changeSlide('up');
+})
+downBtn.addEventListener('click', () => {
+    changeSlide('down');
+})
+    
+document.addEventListener('keydown', event => {
+    if (event.key === 'ArrowUp') {
         changeSlide('up');
-    })
-    downBtn.addEventListener('click', () => {
+    } else if (event.key === 'ArrowDown') {
         changeSlide('down');
-    })
-        
-    document.addEventListener('keydown', event => {
-        if (event.key === 'ArrowUp') {
-            changeSlide('up');
-        } else if (event.key === 'ArrowDown') {
-            changeSlide('down');
-        }
-    })
-    
-    function changeSlide(direction) {
-        if (direction === 'up') {
-            activeSlideIndex++;
-            if(activeSlideIndex === slidesCount) {
-                activeSlideIndex = 0;
-            }
-        } else if (direction === 'down') {
-            activeSlideIndex--;
-            if(activeSlideIndex < 0) {
-                activeSlideIndex = slidesCount - 1;
-            }
-        }
-    
-        const heightOfWindow = container.clientHeight;
-    
-        mainSlide.style.transform = `translateY(-${activeSlideIndex * heightOfWindow}px)`;
-        sidebar.style.transform = `translateY(${activeSlideIndex * heightOfWindow}px)`;
     }
-                            </code>
-                        </pre>
-                    </section>
-                </div>
+})
+
+function changeSlide(direction) {
+    if (direction === 'up') {
+        activeSlideIndex++;
+        if(activeSlideIndex === slidesCount) {
+            activeSlideIndex = 0;
+        }
+    } else if (direction === 'down') {
+        activeSlideIndex--;
+        if (activeSlideIndex < 0) {
+            activeSlideIndex = slidesCount - 1;
+        }
+    }
+
+    const heightOfWindow = container.clientHeight;
+
+    mainSlide.style.transform = `translateY(-${activeSlideIndex * heightOfWindow}px)`;
+    sidebar.style.transform = `translateY(${activeSlideIndex * heightOfWindow}px)`;
+}
+                        </code>
+                    </pre>
+                </section>
+                <section id="projects" class="projects">
+                    <h2 class="projects-title">Projects</h2>
+                    <div class="projects-row">
+                        <div class="project-card">
+                            <a href="" class="project-link">
+                                <img src="" alt="project picture" class="card-image">
+                            </a>
+                            <div class="project-overlay">
+                                <h3 class="project-title">Aiming Game</h3>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <a href="" class="project-link">
+                                <img src="" alt="project picture" class="card-image">
+                            </a>
+                            <div class="project-overlay">
+                                <h3 class="project-title">Interesting Slider</h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </main>
         <footer class="footer">

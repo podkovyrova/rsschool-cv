@@ -251,6 +251,15 @@ section {
     display: flex;
     justify-content: space-between;
 }
+.skills-column {
+    display: flex;
+    flex-direction: column;
+}
+.skills-title {
+    margin: 10px 0 0px;
+    text-align: center;
+    font-size: 1.55rem;
+}
 .skills-image {
     border-radius: 50%;
     border: 5px solid #8d6bee;
@@ -379,6 +388,17 @@ section {
     color: inherit;
 }
 /* code */
+
+/* projects */
+.projects {}
+.projects-title {}
+.projects-row {}
+.project-card {}
+.project-link {}
+.card-image {}
+.project-overlay {}
+.project-title {}
+/* projects */
 
 /* footer */
 .footer {
