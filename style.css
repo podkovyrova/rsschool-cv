@@ -74,9 +74,6 @@ body {
     max-width: 1080px;
     margin: 0 auto;
 }
-/* main {
-    flex: 1 1 auto;
-} */
 section {
     position: relative;
     margin: 0px 0px 15px 0px;
@@ -132,7 +129,7 @@ section {
 /* card info */
 .card-row {
     display: flex;
-    padding: 50px;
+    padding: 50px 10px 20px 50px;
     background: rgba(196, 196, 196, 0.3);
     border-radius: 10px;
     margin: 20px;
@@ -152,11 +149,14 @@ section {
     text-transform: uppercase;
     margin: 0 0 15px 0;
 }
+.card-column:last-child {
+    padding: 40px;
+}
 .card-column-photo {
     margin: 0 auto;
-    vertical-align: middle;
-    max-height: 400px;
-    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
     border-radius: 50%;
     border: 10px solid #fff;
@@ -174,12 +174,17 @@ section {
     margin: 0 0 12px 0;
     background: rgba(196, 196, 196, 0.35);
     border-radius: 10px;
-    padding: 10px 10px 10px 30px;
     font-size: 1.25rem;
     color: #fff;
+    cursor: pointer;
+    transition: all .5s ease 0s;
 }
 .contacts-item:last-child {
     margin: 0px;
+    padding: 10px 10px 10px 30px;
+}
+.contacts-item:hover {
+    background: rgba(196, 196, 196, 0.5);
 }
 .contacts-item img {
     width: 20px;
@@ -187,8 +192,13 @@ section {
     margin-right: 20px;
 }
 .contacts-item-link {
-    vertical-align: bottom;
+    display: block;
     color: inherit;
+    padding: 10px 10px 10px 30px;
+}
+.contacts-item-link a {
+    display: block;
+    height: 100%;
 }
 /* card info */
 
