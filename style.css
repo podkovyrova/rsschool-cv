@@ -98,6 +98,12 @@ section {
     height: 2px;
     background: #545454;
 }
+.content {
+    background-color: #fff;
+    margin: 20px;
+    padding: 50px;
+    border-radius: 5px;
+}
 /* common style */
 
 /* header */
@@ -202,12 +208,6 @@ section {
 /* card info */
 
 /* about */
-.content {
-    background-color: #fff;
-    margin: 20px;
-    padding: 50px;
-    border-radius: 5px;
-}
 .about-text {
     text-align: justify;
     font-size: 1.25rem;
@@ -416,11 +416,52 @@ section {
     flex-wrap: wrap;
     flex: 0 1 500px;
     cursor: pointer;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    position: relative;
 }
-.project-link {}
-.card-image {}
-.project-overlay {}
-.project-title {}
+.project-link {
+    display: block;
+}
+.card-image {
+    display: block;
+    max-width: 100%;
+    height: 290px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.card-image {
+    object-fit: cover;
+}
+.project-overlay {
+    background-color: rgba(34, 11, 43, 0.93);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    border-radius: 5px;
+    opacity: 0;
+    overflow: hidden;
+    transition: all .5s ease-in-out 0s;
+}
+.project-overlay:hover {
+    opacity: 1;
+    overflow: visible;
+}
+.project-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+    font-size: 3rem;
+    text-decoration: underline;
+    transition: all .5s ease 0s;
+}
+.project-title:hover {
+    color: #e85ad8;
+}
 /* projects */
 
 /* footer */
