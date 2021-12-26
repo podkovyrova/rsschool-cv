@@ -158,6 +158,9 @@ section {
 .card-column:last-child {
     padding: 40px;
 }
+.contacts-title {
+    display: none;
+}
 .card-column-photo {
     margin: 0 auto;
     display: flex;
