@@ -80,14 +80,14 @@ section {
 }
 ._title {
     display: inline-block;
-    background: #545454;
     width: 200px;
     padding: 5px;
-    border-radius: 0px 0px 5px 0px;
     text-align: center;
     font-size: 1.5rem;
     text-transform: uppercase;
-    color: #fff;
+    color: #ffffff;
+    background: #545454;
+    border-radius: 0px 0px 5px 0px;
     margin: 0px 0px 10px 0px;
 }
 .decoration-line {
@@ -99,19 +99,19 @@ section {
     background: #545454;
 }
 .content {
-    background-color: #fff;
     margin: 20px;
     padding: 50px;
+    background-color: #ffffff;
     border-radius: 5px;
 }
 /* common style */
 
 /* header */
 .header {
-    background-color: #fff;
     height: 60px;
     font-size: 24px;
     line-height: 150%;
+    background-color: #ffffff;
     border-radius: 0 0 15px 15px;
 }
 .menu {
@@ -119,8 +119,6 @@ section {
     width: 100%;
     justify-content: space-between;
     padding: 15px 45px;
-}
-.menu-item {
 }
 .menu-item-link {
     color: #626ef4;
@@ -135,25 +133,25 @@ section {
 /* card info */
 .card-row {
     display: flex;
+    margin: 20px;
     padding: 50px 10px 20px 50px;
     background: rgba(196, 196, 196, 0.3);
     border-radius: 10px;
-    margin: 20px;
 }
 .card-column {
     flex-basis: 50%;
 }
 .card-column h1 {
+    margin: 0 0 15px 0;
     font-family: 'Montserrat';
     font-size: 4rem;
-    color: #fff;
-    margin: 0 0 15px 0;
+    color: #ffffff;
 }
 .card-column h2 {
-    color: #000;
+    margin: 0 0 15px 0;
     font-size: 3rem;
     text-transform: uppercase;
-    margin: 0 0 15px 0;
+    color: #000000;
 }
 .card-column:last-child {
     padding: 40px;
@@ -162,13 +160,13 @@ section {
     display: none;
 }
 .card-column-photo {
-    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
     overflow: hidden;
     border-radius: 50%;
-    border: 10px solid #fff;
+    border: 10px solid #ffffff;
 }
 .card-column img {
     width: 100%;
@@ -180,10 +178,10 @@ section {
 }
 .contacts-item {
     margin: 0 0 12px 0;
+    font-size: 1.25rem;
+    color: #ffffff;
     background: rgba(196, 196, 196, 0.35);
     border-radius: 10px;
-    font-size: 1.25rem;
-    color: #fff;
     cursor: pointer;
     transition: all .5s ease 0s;
 }
@@ -201,8 +199,8 @@ section {
 }
 .contacts-item-link {
     display: block;
-    color: inherit;
     padding: 10px 10px 10px 30px;
+    color: inherit;
 }
 .contacts-item-link a {
     display: block;
@@ -235,25 +233,25 @@ section {
     margin-left: 10px;
 }
 .university-name {
-    font-weight: 700;
     margin: 0px 0px 5px 0px;
     font-size: 1.75rem;
+    font-weight: 700;
 }
 .university-faculty {
-    font-size: 1.2rem;
     margin: 0px 0px 2px 0px;
+    font-size: 1.2rem;
 }
 .university-year {
-    color: rgba(115, 128, 141, 1);
+    color: #73808d;
 }
 /* education */
 
 /* skills */
 .skills-row {
-    padding: 15px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 15px 0;
 }
 .skills-column {
     display: flex;
@@ -269,25 +267,25 @@ section {
     font-size: 1.55rem;
 }
 .skills-image {
-    border-radius: 50%;
-    border: 5px solid #8d6bee;
-    background-color: #d4acf8;
-    width: 100px;
-    height: 100px;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #8d6bee;
+    background-color: #d4acf8;
 }
 .skills-image::before {
     content: '';
     position: absolute;
     top: 0;
     left: 50%;
-    margin-left: -35px;
-    margin-top: 10px;
     width: 70px;
     height: 70px;
+    margin-left: -35px;
+    margin-top: 10px;
     border-radius: 50%;
     background-color: #fff;
 }
@@ -302,9 +300,9 @@ section {
 
 /* courses */
 .courses-list {
-    font-size: 1.55rem;
-    padding: 10px 0 10px 10px;
     position: relative;
+    padding: 10px 0 10px 10px;
+    font-size: 1.55rem;
 }
 .courses-item {
     line-height: 150%;
@@ -312,12 +310,12 @@ section {
 .courses-list li::before {
 	content: "";
     display: inline-block;
-    background: #545454;
     width: 10px;
     height: 10px;
-    border-radius: 50%;
     margin-right: 10px;
     margin-bottom: 2px;
+    background: #545454;
+    border-radius: 50%;
 }
 .course-link {
     color: #a967e8;
@@ -337,7 +335,6 @@ section {
 /* courses */
 
 /* language */
-.languages {}
 .languages-row {
     display: flex;
 }
@@ -345,10 +342,10 @@ section {
     margin: 0px 50px 0px 0px;
 }
 .language-title {
-    margin: 0px 0px 10px 0px;
-    font-size: 2rem;
     position: relative;
     padding-top: 15px;
+    margin: 0px 0px 10px 0px;
+    font-size: 2rem;
 }
 .language-title::after {
     content: "";
@@ -368,25 +365,25 @@ section {
 
 /* code */
 .code {
+    position: relative;
     margin: 60px 20px 0px;
     padding: 40px 50px 0px;
-    background-color: #000;
-    color: #fff;
+    background-color: #000000;
+    color: #ffffff;
     border-radius: 5px;
-    position: relative;
-    border: 2px solid #fff;
+    border: 2px solid #ffffff;
 }
 .code-title {
     position: absolute;
     top: -20px;
     left: 50%;
     margin-left: -250px;
-    background-color: #fff;
-    color: #545454;
-    border-radius: 5px;
+    padding: 10px 50px;
     font-size: 1.5rem;
     text-align: center;
-    padding: 10px 50px;
+    color: #545454;
+    background-color: #ffffff;
+    border-radius: 5px;
 }
 .code-title a {
     color: #ff1393;
@@ -402,11 +399,11 @@ section {
     margin: 50px 20px 20px;
 }
 .projects-title {
+    margin: 20px 0px 20px;
     font-size: 3rem;
     text-align: center;
-    margin: 20px 0px 20px;
-    color: #fff;
     text-transform: uppercase;
+    color: #ffffff;
     font-weight: 700;
 }
 .projects-row {
@@ -414,13 +411,16 @@ section {
     justify-content: space-between;
 }
 .project-card {
-    background-color: rgba(255, 255, 255, 0.281);
-    border-radius: 5px;
+    position: relative;
     flex-wrap: wrap;
     flex: 0 1 500px;
-    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.281);
+    border-radius: 5px;
     box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
-    position: relative;
+    cursor: pointer;
+}
+.project-card a:hover {
+    z-index: 999;
 }
 .project-link {
     display: block;
@@ -436,28 +436,30 @@ section {
     object-fit: cover;
 }
 .project-overlay {
-    background-color: rgba(34, 11, 43, 0.93);
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 2;
-    border-radius: 5px;
-    opacity: 0;
-    overflow: hidden;
-    transition: all .5s ease-in-out 0s;
-}
-.project-overlay:hover {
     opacity: 1;
     overflow: visible;
+    background-color: rgba(34, 11, 43, 0.98);
+    border-radius: 5px;
+    transition: all .5s ease-in-out 0s;
+    z-index: 2;
+}
+.project-overlay:hover {
+    display: none;
+    opacity: 0;
+    overflow: hidden;
+    z-index: 0;
 }
 .project-title {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
-    color: #fff;
+    color: #ffffff;
     font-size: 3rem;
     text-decoration: underline;
     transition: all .5s ease 0s;
@@ -470,8 +472,8 @@ section {
 /* footer */
 .footer {
     padding: 30px;
-    background-color: #626ef4;
     font-size: 1.5rem;
+    background-color: #626ef4;
 }
 .footer-row {
     display: flex;
@@ -479,14 +481,14 @@ section {
     align-items: flex-end;
 }
 .footer-author {
-    color: #fff;
+    color: #ffffff;
     flex-basis: 50%;
 }
 .footer-link {
     display: block;
     margin: 0px 20px 0px 0px;
-    color: #fff;
     text-decoration: underline;
+    color: #ffffff;
 }
 .footer-link a {
     color: inherit;
