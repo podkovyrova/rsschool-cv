@@ -108,11 +108,14 @@ section {
 
 /* header */
 .header {
+    position: fixed;
+    min-width: 100%;
     height: 60px;
     font-size: 24px;
     line-height: 150%;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.95);
     border-radius: 0 0 15px 15px;
+    z-index: 999;
 }
 .menu {
     display: flex;
