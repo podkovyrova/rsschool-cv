@@ -7,7 +7,7 @@
 + GitHub: [podkovyrova](https://github.com/podkovyrova)
 
 ## **About**
-I am living in Moscow and finishing education in economics science. One year ago I decided to start learning in Information Technologies. Honestly, I find out it more complicated and amazing than Economics. So, this is the main reason I'm here. 
+I'm living in Moscow and finishing education in Economics science. One year ago I decided to start learning in Information Technologies. Honestly, I find out it more complicated and amazing than Economics. So, this is the main reason I'm here. 
 In summer 2021 I had mastered the base of HTML, CSS and JavaScript.
 Since 2022 I have been working as QA engineer for MobileTeleSystems Digital. Testing is fun but I want to become a developer.
 My goal for the next six months is to finish RS School and get my first job as a frontend developer (:
@@ -20,7 +20,7 @@ My goal for the next six months is to finish RS School and get my first job as a
 + Figma
 + Agile, Scrum, Kanban
 + BEM 
-+ QA: Postman, Charles Proxy, Graylog and so so so on 
++ QA Tools: Postman, Charles Proxy, Graylog and so so so on 
 ## Code 
 Slider code I created
 ```
